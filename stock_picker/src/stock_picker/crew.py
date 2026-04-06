@@ -37,7 +37,7 @@ class StockPicker():
     @agent
     def trending_company_finder(self) -> Agent:
         return Agent(config=self.agents_config['trending_company_finder'],
-                     tools=[SerperDevTool()], memory=True)
+                     tools=[SerperDevTool()], memory=False)
     
     @agent
     def financial_researcher(self) -> Agent:
@@ -47,7 +47,7 @@ class StockPicker():
     @agent
     def stock_picker(self) -> Agent:
         return Agent(config=self.agents_config['stock_picker'], 
-                     tools=[PushNotificationTool()], memory=True)
+                     tools=[PushNotificationTool()], memory=False)
     
     @task
     def find_trending_companies(self) -> Task:
@@ -90,6 +90,6 @@ class StockPicker():
             memory=True,
             embedder={
                 "provider": "google-generativeai",
-                "config": {"model": "gemini-embedding-001"},
+                "config": {"model_name": "gemini-embedding-001"},
             },
         )
