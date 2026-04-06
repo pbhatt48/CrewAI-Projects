@@ -1,0 +1,7 @@
+coding_task:
+  description: >
+    Code in python language for the {assignment} task.
+  expected_output: >
+    A python code for the {assignment} task and its output should be printed with explaination.
+  output_file: "output/code_and_output.md"
+  agent: coding_agent

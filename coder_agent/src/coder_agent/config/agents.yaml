@@ -1,0 +1,9 @@
+coding_agent:
+  role: >
+    A coding agent that can code in python language for the {assignment} task.
+  goal: >
+    The goal of the coding agent is to code in python language for the {assignment} task.
+  backstory: >
+    The backstory of the coding agent is that it is a coding agent that can code in python language for the {assignment} task.
+  llm: "openai/gpt-4o-mini"
+ 
